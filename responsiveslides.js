@@ -8,7 +8,11 @@
 
 /*jslint browser: true, sloppy: true, vars: true, plusplus: true, indent: 2 */
 
-(function ($, window, i) {
+(function ($, window) {
+  var i = 0;
+  $.fn.initialization = function (k) {
+	i = k;
+  }
   $.fn.responsiveSlides = function (options) {
 
     // Default settings
@@ -388,4 +392,4 @@
     });
 
   };
-})(jQuery, this, 0);
+})(jQuery, this);
